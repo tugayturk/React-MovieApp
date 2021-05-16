@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: white;
+  background-color: #22254b;
+  }
+
+.movie {
+  width: 250px;
+  position: relative;
+  background-color: rgb(39, 39, 151);
+  margin: 1rem;
+}
+.movie img {
+  max-width: 100%;
+}
+.movie-info {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.movie-info h3 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.overview {
+  background-color: white;
+  color: #22254b;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .overview {
+  width: 100%;
+  visibility: visible;
+  transform: translateY(0%);
+}
