@@ -1,7 +1,7 @@
 import './App.css';
 import Movies from './Components/Movies';
 import {useEffect,useState} from "react"
- 
+
 function App() {
     
     const API_KEY="8bf646dca9acad23e2a82bca5349d574"
@@ -51,12 +51,14 @@ const changeTheme = () => {
       <form onSubmit={handleSubmit} className="searchBar">
         <input onChange={handleChange} value={searchTerm} className="search" type="search" placeholder="Search Movie"></input>
       </form>
-      <button onClick={changeTheme} className="themeButton">x</button>
+      <button onClick={changeTheme} className="themeButton">
+       Switch Theme
+        </button>
     </header>
     <div className={theme === "light" ? "App-light": "App-dark"}>
       
    {movies.length > 0 && movies.map(movie => {
-  return  <Movies key={movie.id} {...movie}/>
+  return  <Movies  key={movie.id} {...movie}/>
    })}
      
     </div></>

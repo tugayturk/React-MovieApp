@@ -16,7 +16,7 @@
 .darkHeader{
   width: 100%;
   height:7vh;
- background-color: indigo;
+  background-color: indigo;
   
 }
 .lightHeader{
@@ -26,11 +26,12 @@
 }
 .themeButton{
   padding: .5rem;
-  width: 5%;
+  width: 7%;
   position: absolute;
   top:1%;
-  border-radius: 9999px;
-  border:none
+  margin-left: 1rem;
+  border:1px solid black;
+  background-color: rgb(145, 131, 144);
 }
 .searchBar{
   width: 30%;
@@ -42,8 +43,10 @@
   width: 60%;
   border-radius: 9999px;
   border:none;
-  background-color: rgb(84, 193, 212);
+  background-color: rgb(158, 201, 209);
   }
 .search:focus{
   outline: none;
 }
+
+
